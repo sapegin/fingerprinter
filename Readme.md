@@ -14,7 +14,7 @@ npm install --save fingerprinter
 
 ## Example
 
-```
+```js
 var Fingerprinter = require('fingerprinter');
 var fp = new Fingerprinter();
 fp.addFiles(['build/scripts.js', 'build/styles.css']);
@@ -32,7 +32,7 @@ fp.get(function(err, fingerprint) {
 
 Add string.
 
-```
+```js
 fp.add('body { color:red; }');
 ```
 
@@ -40,7 +40,7 @@ fp.add('body { color:red; }');
 
 Add file(s).
 
-```
+```js
 fp.addFile('build/scripts.js');
 fp.addFiles(['build/scripts.js', 'build/styles.css']);
 ```
@@ -49,7 +49,7 @@ fp.addFiles(['build/scripts.js', 'build/styles.css']);
 
 Get hash.
 
-```
+```js
 fp.get(function(err, fingerprint) {
 	// fingerprint = '73287dcc3d1ba241d7556412b7201af6'
 });
@@ -59,7 +59,7 @@ fp.get(function(err, fingerprint) {
 
 Append hash to URL.
 
-```
+```js
 fp.makeUrl('build/scripts.js', function(err, uri) {
 	// uri = 'build/scripts.js?73287dcc3d1ba241d7556412b7201af6'
 });
