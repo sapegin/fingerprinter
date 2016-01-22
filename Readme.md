@@ -1,5 +1,6 @@
 # fingerprinter
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![Build Status](https://travis-ci.org/sapegin/fingerprinter.png)](https://travis-ci.org/sapegin/fingerprinter)
 
 Generic assests fingerprint generator. Generates md5 hash for a set of files or strings that you can append to URL to flush browser cache.
